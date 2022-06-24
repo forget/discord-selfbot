@@ -2,7 +2,7 @@
 
 Simplified version (base) can be found at github.com/hell/discord-selfbot
 
-Requirements
+# Requirements
     "pip3 install discord"
 
 Installation
