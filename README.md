@@ -14,5 +14,6 @@ Simplified version (base) can be found at github.com/hell/discord-selfbot
     ".kick (USER): kicks a user from the server (requires permissions)"
     ".ban (USER): bans a user from the server (requires permissions)"
     ".unban (ID): unbans a user from the server (requires permissions)"
+    ".role (USER) (ROLE): add/remove a role from a user (requires permissions)"
 
 Navigate to settings.py, input your token and run the program.
