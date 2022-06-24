@@ -1,2 +1,9 @@
 # discord-selfbot
-Some simple message/users related program
+
+Simplified version (base) can be found at github.com/hell/discord-selfbot
+
+# Requirements
+pip install discord
+
+# Installation
+Navigate to settings.py, input your token and run the program.
