@@ -43,7 +43,7 @@ class Messages(commands.Cog):
             async for message in friend.history(limit=None).filter(lambda m: m.author == self.bot.user).map(lambda m: m):
                 try: await message.delete()
                 except: pass
-        print("[+] Success: Cleared all friends!")
+        print("[+] Success: Cleared messages with all friends!")
                 
 def setup(bot):
     bot.add_cog(Messages(bot))
