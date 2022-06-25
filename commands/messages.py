@@ -14,7 +14,7 @@ class Messages(commands.Cog):
                 if str(username) in str(private_channel):
                     channel = private_channel
 
-        if not channel: print("[-] Fail: Channel has not been found!"); return
+        if not channel: return print("[-] Fail: Channel has not been found!")
         
         async for message in channel.history(limit=None).filter(lambda m: m.author == self.bot.user).map(lambda m: m):
             try: await message.delete()
@@ -30,7 +30,7 @@ class Messages(commands.Cog):
             for private_channel in self.bot.private_channels:
                 if str(username) in str(private_channel):
                     channel = private_channel
-        if not channel: print("[-] Fail: Channel has not been found!"); return
+        if not channel: return print("[-] Fail: Channel has not been found!")
         
         async for message in channel.history(limit=None).filter(lambda m: m.author == self.bot.user).map(lambda m: m):
             try: await message.delete() if message.attachments else False
