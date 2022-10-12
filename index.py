@@ -1,12 +1,17 @@
 from settings import Config
 from discord.ext import commands
 from os import _exit, listdir
+import discord
 
 class Discord(object):
+    intents = discord.Intents.default()
+    intents.members = True
+    
     def __init__(self) -> None:
         self.bot = commands.Bot(
             command_prefix='.',
             self_bot=True,
+            intents=self.intents,  
             case_sensitive=False
         )
         self.bot.Config = Config()
@@ -22,4 +27,4 @@ class Discord(object):
         except: print(f"[-] Insufficient token!"); _exit(-3)
         
 if __name__ == "__main__":
-    Discord()   
+    Discord() 
