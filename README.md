@@ -1,5 +1,3 @@
-# discord-selfbot
-
 # Requirements
     "pip install discord"
 
