@@ -1,5 +1,3 @@
-import discord
-
 class Config(object):
     def __init__(self) -> None:
         self.token = "" #your access token
