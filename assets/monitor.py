@@ -168,7 +168,6 @@ class Monitor(object):
         self.ws.send(dumps(payload))
 
         result = self.ws.recv()
-        #print(result)
 
         try:
             data = loads(result)
