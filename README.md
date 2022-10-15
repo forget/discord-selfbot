@@ -1,4 +1,4 @@
-# Discord self bot
+# Discord
 
 Discord self bots have been banned & unsupported by the API for about 5 years, therefore do not expect this to be perfect, and please acknowledge the risks you are taking by running this program as it is against their user agreement. However, if you wish to run it - navigate to settings.py, input your token and start the program. You may make any changes to your config by editing settings.py :)
 
